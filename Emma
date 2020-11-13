@@ -1,0 +1,311 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Template for AIMS Rwanda Assignments         %%%              %%%
+%%% Author:   AIMS Rwanda tutors                             %%%   ###        %%%
+%%% Email: tutors2017-18@aims.ac.rw                               %%%   ###        %%%
+%%% Copyright: This template was designed to be used for    %%% #######      %%%
+%%% the assignments at AIMS Rwanda during the academic year %%%   ###        %%%
+%%% 2017-2018.                                              %%%   #########  %%%
+%%% You are free to alter any part of this document for     %%%   ###   ###  %%%
+%%% yourself and for distribution.                          %%%   ###   ###  %%%
+%%%                                                         %%%              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%% Ensure that you do not write the questions before each of the solutions because it is not necessary. %%%%%% 
+
+\documentclass[11pt,a4paper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% packages %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[all]{xy}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{psfrag}
+
+%%%%%%%%%%%%%%%%%%%%% students data %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\student}{Your full name here!}
+\newcommand{\course}{Course name goes here!}
+\newcommand{\assignment}{Put a number here!}
+
+%%%%%%%%%%%%%%%%%%% using theorem style %%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{exa}[thm]{Example}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{coro}[thm]{Corollary}
+\newtheorem{quest}{Question}[section]
+
+%%%%%%%%%%%%%%  Shortcut for usual set of numbers  %%%%%%%%%%%
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%% title page %%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\begin{center}
+\textbf{AFRICAN INSTITUTE FOR MATHEMATICAL SCIENCES \\[0.5cm]
+(AIMS RWANDA, KIGALI)}
+\vspace{1.0cm}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%% assignment information %%%%%%%%%%%%%%%%
+\noindent
+\rule{17cm}{0.2cm}\\[0.3cm]
+Name: put your name here \hfill Assignment Number: 1\\[0.1cm]
+Course: Ordinary Differential Equation
+ \hfill Date: \today\\
+\rule{17cm}{0.05cm}
+\vspace{1.0cm}
+
+\section{Question 1}
+
+\begin{align}
+\frac{dy}{dx} =6\sqrt{y}+5x^3
+%\frac{d^2 u}{dx^2}
+\end{align}
+and a point $(-1,4)$
+
+
+The slope(m) of the tangent is given by 
+ \begin{align*}
+m&=6\sqrt{4}+5(-1)^3\\
+ &=6 \times 2-5\\
+  &=7
+ %\frac{d^2 u}{dx^2}
+ \end{align*}
+ 
+
+\begin{align*}
+\frac{dy}{dx} =6\sqrt{y}+5x^3
+%\frac{d^2 u}{dx^2}
+\end{align*} 
+that passes through $(-1,4)$ is $m=7$
+
+\section{Question 2}
+
+ \begin{align}\label{eq1}
+ \frac{dy}{dx} =-\frac{x}{y}, \quad \quad y(4)=-3
+ \end{align}
+ \begin{quest}
+ 	Determine a solution Therecurve for the initial value problem of\ref{eq1}
+ \end{quest}
+By using the separation of variable for equation\ref{eq1}, we get	
+\begin{align}
+ydy &= -xdx
+\end{align}
+By integrating both sides, we get:
+\begin{align*}
+\int ydy &=\int  -xdx\\
+\frac{y^2}{2} &=-\frac{x^2}{2}+c\\
+\end{align*}
+Multiply 2 both sides, we get:
+\begin{align}\label{eq2}
+y^2&=-x^2+A, \quad \quad A=2c
+\end{align}
+
+
+\begin{align*}
+(-3)^2&=-(4^2)+A\\
+      9&=-16+A
+      \end{align*}
+\begin{align}\label{eq3}
+	A&=25
+\end{align}
+By replacing equation\eqref{eq3} into equation \ref{eq2}, we get:
+
+\begin{align*}
+y^2&=-x^2+25\\
+y&=-\sqrt{-x^2+25}
+\end{align*}
+ 
+ The solutions of equation \ref{eq1} can also be written as; By replacing equation\eqref{eq3} into equation \ref{eq2}, we get
+ 
+ \begin{align}
+ y^2&=-(x^2-25)\\
+ y&=\pm i \sqrt{(x-5)(x+5)}
+ \end{align}
+This is how solution of equation \ref{eq1} can be writen in complex set as $y=\pm i \sqrt{(x-5)(x+5)}$
+
+\section{Question 3}
+
+
+ 
+\begin{align}\label{et2}
+\frac{dx}{dt}=\beta xy,  \quad \quad \beta \geq0
+\end{align}
+\begin{itemize}
+\item Combine equations \ref{et1} and \ref{et2}to derive a differential equation for $x(t)$. we get;Is the model of epidemics studied here realistic? If not, what is missing
+in it?
+ \begin{align}\label{eq10}
+\frac{dy}{dx} = \beta x(1-x)
+\end{align}
+\item The solution of this differential equation for $x(0) = x_0$ .
+Using separation of variable and solve equation \ref{eq11}, we get;
+ \begin{align}\label{eq12}
+\frac{1}{x(1-x)}dx = \beta dt
+\end{align}
+Integrating both sides, we get;
+ \begin{align}\label{eq13}
+\int \frac{1}{x(1-x)}dx = \int \beta dt\\
+\end{align}
+using partial fraction integration, we get
+ \begin{align*}
+\int \frac{A}{x}+\frac{B}{1-x}  dx = \int \beta dt\\
+\ln|x|-ln|1-x|=\beta t +c\\
+|\frac{x}{1-x}|= e^{\beta t +c}\\
+\frac{x}{1-x}= Ae^{\beta t}\\
+x = \frac{1}{1+Ae^(-\beta t)}
+\end{align*}
+By using the given condition $t=0$, $x=x_0$, we get;
+ \begin{align*}
+x_0 = \frac{1}{1+A}\\
+A = \frac{1-x_0}{x_0}
+\end{align*}
+Then
+ \begin{align*}
+x(t) = \frac{1}{1+(\frac{1-x_0}{x_0})e^(-\beta t)}\\
+x(t) = \frac{x_0}{x_0+(1-x_0)e^(-\beta t)}
+\end{align*}
+\item Show that $\lim\limits_{t \rightarrow +\infty}  $ $x(t) = 1$ if $x_0 > 0$ and interpret this result.
+\begin{align*}
+ \lim\limits_{t \rightarrow +\infty} x(t) &= \frac{x_0}{x_0+(1-x_0)e^(-\infty )}\\Is the model of epidemics studied here realistic? If not, what is missing
+ in it?
+  &=\frac{x_0}{x_0}\\
+  &=1
+\end{align*}
+\item Is the model of epidemics studied here realistic? If not, what is missing
+in it
+\end{itemize}
+
+
+
+\section{Question 4}
+
+
+\begin{align}\label{eqa1}
+(e^y\sin2x)dx + (y-e^{2y})\cos x dy=0, \quad \quad y(0) = 0
+\end{align}
+ From the trigonometric function of the double angle
+\begin{align}\label{eqa2}
+\sin	(2x) =2\sin x \cos x
+\end{align}
+By substituting equation \ref{eqa2} into equation \ref{eqa1}, and we get:
+
+\begin{align}\label{eqa3}
+(2e^y\sin x \cos x)dx + (y-e^{2y})\cos x dy=0
+\end{align}
+Is the model of epidemics studied here realistic? If not, what is missing
+in it?
+Divide equation\ref{eqa3} by $\cos s $, we get;
+
+\begin{align}\label{eqa4}
+(2e^y\sin x )dx + (y-e^{2y}) dy=0
+\end{align}
+
+we need to check if the given ODE's is exact, from the equation\ref{eqa3}
+\begin{align}\label{eqa5}
+M&= 2e^y\sin x\\ N &=y-e^{2y}\\	
+\frac{\partial M}{\partial y} &= 2e^y\sin x\\Is the model of epidemics studied here realistic? If not, what is missing
+in it?
+\frac{\partial N}{\partial x} &=0
+\end{align}
+So,$\frac{\partial M}{\partial y} \neq
+\frac{\partial M}{\partial y} $, the equation \ref{eqa4} is not exact ,then use the integrating by factor ($I$)                                                                                                                  
+
+\begin{align}
+P(x) &=\frac{\frac{\partial M}{\partial y}-\frac{\partial N}{\partial x}}{N}\\
+	&=\frac{2e^y\sin x }{y-e^{2y}}
+\end{align}
+$P(x)$ is not only depend on x then it ca't be an integrating factor. let's now consider $P(y)$
+
+\begin{align}
+P(y) &=\frac{\frac{\partial N}{\partial X}-\frac{\partial M}{\partial y}}{M}\\
+&=-\frac{2e^y\sin x }{2e^y\sin x}\\
+&=-1
+\end{align}
+
+Then the integrating factor $I= e^{\int -1 dy}$
+\begin{align} \label{ert1}
+I=e^{-y}
+\end{align}
+Multiplying equation \ref{ert1} in \ref{eqa4}  we get:
+ \begin{align}\label{ert2}
+ (2\sin x )dx + (ye^{-y}-e^{y}) dy=0
+ \end{align}
+ 
+ We can find the solution of equation\ref{ert2} by using separation of variable
+ \begin{align}
+(\sin x )dx &= -(ye^{-y}-e^{y}) dy
+ \end{align}
+ By integrating both sides, we get:
+ \begin{align}\label{ert3}
+ \int(\sin x )dx&=\int  -ye^{-y}-\int e^{y} \\
+ \end{align}
+ 
+ By integration by part to integrate $\int  -ye^{-y}$, we get;
+
+ \begin{align}\label{ert4}
+\int  -ye^{-y}=ye^{-y}+e^{-y}
+ \end{align}
+ 
+By replacing equation\ref{ert4} into  \ref{ert3} and compute the rest integral we get
+
+\begin{align}\label{er1}
+-2\cos x= -ye^{-y}-e^{-y}- e^{y}+c
+\end{align}
+
+By using the initial value given in equation \ref{er1} which means $x=0$ , $y=0$, we get:
+
+\begin{align*}
+c&=-2\cos 0 -0e^{-0}-e^{-0}- e^{0}\\
+ &=-4
+\end{align*}
+Then equation \ref{er1}
+\begin{align}
+-4= -2\cos x-ye^{-y}-e^{-y}- e^{y}+c
+\end{align}
+
+\section{Exercise 5}
+Find the general solution of: $y^{(5)} - ay^{(4)} +  28y^{(3)} - 36y^{(2)} + 27y^{(1)} - 27y = 0$ \\
+Let:\\
+$y =  e^{rx}$ \\
+$y^{(1)} =  re^{rx}$ \\
+$y^{(2)} =  r^2e^{rx}$ \\
+$y^{(3)} =  r^3e^{rx}$ \\
+$y^{(4)} =  r^4e^{rx}$ \\
+$y^{(5)} =  r^5e^{rx}$
+
+\begin{align*}
+y^{(5)} - ay^{(4)} +  28y^{(3)} - 36y^{(2)} + 27y^{(1)} - 27y &= 0\\
+r^5e^{rx} - 9r^4e^{rx} +  28r^3e^{rx} - 36r^2e^{rx} + 27re^{rx} - 27e^{rx} &= 0\\
+r^5 -9r^4 + 28r^3 - 36r^2 + 27r - 27 &= 0\\
+(r-3) \left [r^4 - 6r^3 + 10r^2 - 6r + 9 \right ] &= 0 \\
+(r-3)(r-3) \left [ r^3-3r^2+r-3 \right]  &= 0 \\
+(r-3)(r-3)(r-3) \left  [ r^2+r+1 \right]  &= 0\\
+(r-3)(r-3)(r-3) \left  [ r^2 +1 \right]  &=0 \\
+\mathrm{\therefore r = 3,3,3,0+i, 0-i}
+\\
+c_1e^{3x} +  c_2xe^{3x} + c_3x^2e^{3x} + A\cos(x) + B\sin(x) &= 0\\
+\end{align*}
+
+
+
+\end{document}
